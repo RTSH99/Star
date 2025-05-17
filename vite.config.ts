@@ -17,4 +17,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  base:"https://github.com/RTSH99/Star"
 })
