@@ -1,4 +1,27 @@
-@import "./base.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes fadeInFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-fadein-float {
+  animation: fadeInFloat 1.5s ease-out forwards;
+}
+
+/* Custom styles */
+.router-link-active {
+  @apply text-primary-hover;
+}
 
 /* Remove #app constraints for full-viewport layout */
 
