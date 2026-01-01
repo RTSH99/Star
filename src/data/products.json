@@ -1,0 +1,226 @@
+[
+  {
+    "title": "Hospital Furniture",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuD7nMbBAVDV9t2uXa_v2tiXiVYbAVBIHTtG4FPZ2Ap7ZzpqdRjauKUceg3_PPr1K4fdPY33IJgg7TD0O_06V8gRNMrZFd3pAgsUPzifJPav72RMr_Rz9sD23NqZPdiuFXmAVJAlaHamFinfIEjim4ZvkXi7_0KUbp7QO48aLBcZ_CMkguigAIrr7VtKJES3NmFYU0z4MQqE-866EnDtxWBNcnlh7WnHmDCXd0tkvorJDJPr7dv_m7J3BLWDXr91BeFigO9q2FtL5NgG",
+    "alt": "Hospital beds, tables, and patient chairs",
+    "category": "Hospital Furniture",
+    "icon": "mdi-hospital-building",
+    "description": "A wide range of furniture for hospitals, clinics, and healthcare facilities, ensuring patient comfort and staff efficiency."
+  },
+  {
+    "title": "Medical Surgical Disposables",
+    "img": "https://via.placeholder.com/400x300?text=Medical+Surgical+Disposables",
+    "alt": "Disposable gloves, masks, and syringes",
+    "category": "Medical Surgical Disposables",
+    "icon": "mdi-medication",
+    "description": "Essential single-use medical and surgical supplies for infection control and various procedures."
+  },
+  {
+    "title": "Diagnostic Kits and Chemicals",
+    "img": "https://via.placeholder.com/400x300?text=Diagnostic+Kits+Chemicals",
+    "alt": "Diagnostic test kits and laboratory chemicals",
+    "category": "Diagnostic Kits and Chemicals",
+    "icon": "mdi-test-tube",
+    "description": "Comprehensive range of diagnostic kits and chemical reagents for accurate testing and analysis."
+  },
+  {
+    "title": "Laboratory Equipments",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCFwEGUnJEt-KHRAs9dpTpuo8vg9FPw5Ch-EqcE3ke4rO0uUG5VMQ4lulvbiyUufHF94kHymST8Qi27rXL-ppCuIhIR1NGnzaUI38-6xOVCvzjBouPXPI3K-YutCEWrWyEepQrtYIzarJxidg2BaYbRRwrVP8rI8UN6uwHlD_fg7fXMElWqn6YbjBdTinHHuJY-xE670wvy7AwW-pVcOjeStjgWCA_O20i5e8uLyhYK1WjLJkSEAJruScnf8cILFjr1-fBwtry6JLIN",
+    "alt": "Microscopes, centrifuges, and lab instruments",
+    "category": "Laboratory Equipments",
+    "icon": "mdi-flask-outline",
+    "description": "Advanced equipment for scientific research, analysis, and educational laboratories."
+  },
+  {
+    "title": "Hospital Linens",
+    "img": "https://via.placeholder.com/400x300?text=Hospital+Linens",
+    "alt": "Bed sheets, blankets, and patient gowns",
+    "category": "Hospital Linens",
+    "icon": "mdi-bed-empty",
+    "description": "High-quality, durable linens designed for comfort and hygiene in hospital environments."
+  },
+  {
+    "title": "Dental Equipments and Materials",
+    "img": "https://via.placeholder.com/400x300?text=Dental+Equipments+Materials",
+    "alt": "Dental chairs, drills, and filling materials",
+    "category": "Dental Equipments and Materials",
+    "icon": "mdi-tooth",
+    "description": "Specialized equipment and materials for dental practices, orthodontics, and oral surgery."
+  },
+  {
+    "title": "OT and ICU Equipments",
+    "img": "https://via.placeholder.com/400x300?text=OT+ICU+Equipments",
+    "alt": "Operating theater lights, ventilators, and patient monitors",
+    "category": "OT and ICU Equipments",
+    "icon": "mdi-operating-room",
+    "description": "Critical equipment for operating theaters and intensive care units, ensuring patient safety and support."
+  },
+  {
+    "title": "Physiotherapy Equipments",
+    "img": "https://via.placeholder.com/400x300?text=Physiotherapy+Equipments",
+    "alt": "Therapy machines, exercise bikes, and rehabilitation tools",
+    "category": "Physiotherapy Equipments",
+    "icon": "mdi-walk",
+    "description": "Tools and machines used for physical therapy, rehabilitation, and injury recovery."
+  },
+  {
+    "title": "Rehabilitation Products and Prosthetics",
+    "img": "https://via.placeholder.com/400x300?text=Rehabilitation+Prosthetics",
+    "alt": "Wheelchairs, crutches, and prosthetic limbs",
+    "category": "Rehabilitation Products and Prosthetics",
+    "icon": "mdi-wheelchair-accessibility",
+    "description": "Aids and devices to assist in rehabilitation and provide mobility solutions for individuals with disabilities."
+  },
+  {
+    "title": "Miscellaneous Products",
+    "img": "https://via.placeholder.com/400x300?text=Miscellaneous+Products",
+    "alt": "Various medical and healthcare-related items",
+    "category": "Miscellaneous Products",
+    "icon": "mdi-dots-horizontal-circle-outline",
+    "description": "A collection of diverse medical products that don't fit into other specific categories."
+  },
+  {
+    "title": "Trauma and Emergency Products",
+    "img": "https://via.placeholder.com/400x300?text=Trauma+Emergency+Products",
+    "alt": "First aid kits, stretchers, and emergency response tools",
+    "category": "Trauma and Emergency Products",
+    "icon": "mdi-lifebuoy",
+    "description": "Essential products for trauma care, emergency response, and first aid situations."
+  },
+  {
+    "title": "Infant Care and NICU Equipments",
+    "img": "https://via.placeholder.com/400x300?text=Infant+Care+NICU",
+    "alt": "Incubators, infant warmers, and neonatal monitors",
+    "category": "Infant Care and NICU Equipments",
+    "icon": "mdi-baby-carriage",
+    "description": "Specialized equipment for newborn care, premature infants, and neonatal intensive care units."
+  },
+  {
+    "title": "Hospital Ware S.S.",
+    "img": "https://via.placeholder.com/400x300?text=Hospital+Ware+SS",
+    "alt": "Stainless steel bowls, trays, and containers for hospitals",
+    "category": "Hospital Ware S.S.",
+    "icon": "mdi-bowl-mix-outline",
+    "description": "Durable stainless steel ware for medical, surgical, and general hospital use."
+  },
+  {
+    "title": "Medical Rubber and Silicon Products",
+    "img": "https://via.placeholder.com/400x300?text=Medical+Rubber+Silicon",
+    "alt": "Rubber tubing, silicone masks, and medical gaskets",
+    "category": "Medical Rubber and Silicon Products",
+    "icon": "mdi-pipe-wrench",
+    "description": "Flexible and sterile products made from medical-grade rubber and silicon for various applications."
+  },
+  {
+    "title": "OB GYN Products",
+    "img": "https://via.placeholder.com/400x300?text=OB+GYN+Products",
+    "alt": "Gynecological instruments, obstetric beds, and maternity supplies",
+    "category": "OB GYN Products",
+    "icon": "mdi-human-pregnant",
+    "description": "Specialized products and equipment for obstetrics and gynecology practices."
+  },
+  {
+    "title": "Sports Compressions",
+    "img": "https://via.placeholder.com/400x300?text=Sports+Compressions",
+    "alt": "Compression socks, sleeves, and wraps for sports",
+    "category": "Sports Compressions",
+    "icon": "mdi-arm-flex",
+    "description": "Compression wear designed to support muscles, improve circulation, and aid recovery in sports."
+  },
+  {
+    "title": "Scientific and Lab Equipments",
+    "img": "https://via.placeholder.com/400x300?text=Scientific+Lab+Equipments",
+    "alt": "Research instruments, laboratory apparatus, and analytical tools",
+    "category": "Scientific and Lab Equipments",
+    "icon": "mdi-science",
+    "description": "A broad range of equipment for scientific research, experiments, and laboratory analysis."
+  },
+  {
+    "title": "X-Ray and Radiology Equipments",
+    "img": "https://via.placeholder.com/400x300?text=X-Ray+Radiology+Equipments",
+    "alt": "X-ray machines, MRI scanners, and imaging devices",
+    "category": "X-Ray and Radiology Equipments",
+    "icon": "mdi-radiology-box-outline",
+    "description": "Advanced equipment for diagnostic imaging, including X-ray, MRI, and CT scan machines."
+  },
+  {
+    "title": "Pathology and Lab Equipments",
+    "img": "https://via.placeholder.com/400x300?text=Pathology+Lab+Equipments",
+    "alt": "Microscopes, centrifuges, and pathology analyzers",
+    "category": "Pathology and Lab Equipments",
+    "icon": "mdi-microscope",
+    "description": "Tools and instruments specifically for pathology labs, aiding in disease diagnosis and research."
+  },
+  {
+    "title": "Home Care Products",
+    "img": "https://via.placeholder.com/400x300?text=Home+Care+Products",
+    "alt": "Mobility aids, daily living aids, and home medical devices",
+    "category": "Home Care Products",
+    "icon": "mdi-home-heart",
+    "description": "Products designed for patient care and assistance in a home environment."
+  },
+  {
+    "title": "Modulators and Central Pipeline",
+    "img": "https://via.placeholder.com/400x300?text=Modulators+Central+Pipeline",
+    "alt": "Medical gas pipeline systems and control units",
+    "category": "Modulators and Central Pipeline",
+    "icon": "mdi-pipe-valve",
+    "description": "Systems and components for central medical gas supply and modulation within healthcare facilities."
+  },
+  {
+    "title": "Surgical Instruments",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDq61UrJ-JPgxuTyh-ueMHKr0cn-DVRFynRf6jfG35uRg5Oqd3UIgZh8L-9aCsDbyobmc0d4XXcNWDl4YDzuAlWpbvrPewc_gGNtQ1z2K1bZw-eq1LfUuqc_SQrGkjY8B2PQi4-2aURHIttQBLE9zGxvG4pjyIavqgbsoZp6FLu5Zs6HYiyDr3MzOlIs25FqwqmnWEBXw-R6PZziYfnq7sDs8j4F_RSlIkuzGs5GBYz1IR0FhKBAFR-qtbIhlSvlcCUpP-R3l-8Sr7W",
+    "alt": "Forceps, scalpels, retractors, and surgical scissors",
+    "category": "Surgical Instruments",
+    "icon": "mdi-scissors-cutting",
+    "description": "Precision-engineered instruments for all types of surgical procedures."
+  },
+  {
+    "title": "Eye ENT Instruments and Equipments",
+    "img": "https://via.placeholder.com/400x300?text=Eye+ENT+Instruments+Equipments",
+    "alt": "Ophthalmoscopes, otoscopes, and ENT examination tools",
+    "category": "Eye ENT Instruments and Equipments",
+    "icon": "mdi-eye-outline",
+    "description": "Specialized instruments and equipment for ophthalmology and ear, nose, and throat (ENT) procedures."
+  },
+  {
+    "title": "Neuro, Nephro, Gastro, Endoscopes",
+    "img": "https://via.placeholder.com/400x300?text=Neuro+Nephro+Gastro+Endoscopes",
+    "alt": "Endoscopes for neurological, nephrological, and gastroenterological procedures",
+    "category": "Neuro, Nephro, Gastro, Endoscopes",
+    "icon": "mdi-scope",
+    "description": "Advanced endoscopes and related equipment for specialized diagnostic and therapeutic procedures in neurology, nephrology, and gastroenterology."
+  },
+  {
+    "title": "Neuro and Cardiac Inst. and Eqip.",
+    "img": "https://via.placeholder.com/400x300?text=Neuro+Cardiac+Inst+Eqip",
+    "alt": "Neurological and cardiac surgical instruments and equipment",
+    "category": "Neuro and Cardiac Inst. and Eqip.",
+    "icon": "mdi-brain",
+    "description": "Specialized instruments and equipment for neurological and cardiac surgeries and interventions."
+  },
+  {
+    "title": "Orthopedic Equip., Implants and Inst.",
+    "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBf3cKsdrEUlcaPpJn9ZUSPrEGbdUOXdqqu2_GgBvM4sbyp9Op_ubLJamGjyFj947djXMkmwedalFHWJhipuPO-7REHNwvezGS7yiE8JRaaeEGWZ_-YUAtUKdJYz0KEJ_-PgidBrikKsWhSGnNsScXL_HyyYComGrKxVws4qOT0tUUe2M7CsNDnsa87f8XEQaVmHlXGEmmaQVCoHiRb-YH0rG76glqiQG-N2PyuNtKyaO6IBdKu_Mnw4Sv_-Cid-iPlWcCUvzTG-8br",
+    "alt": "Orthopedic implants, surgical instruments, and rehabilitation equipment",
+    "category": "Orthopedic Equip., Implants and Inst.",
+    "icon": "mdi-bone",
+    "description": "A comprehensive range of orthopedic equipment, implants, and instruments for bone and joint care."
+  },
+  {
+    "title": "ICU Ambulance and Equip.",
+    "img": "https://via.placeholder.com/400x300?text=ICU+Ambulance+Equip",
+    "alt": "Ambulances with ICU facilities and critical care equipment",
+    "category": "ICU Ambulance and Equip.",
+    "icon": "mdi-ambulance",
+    "description": "Fully equipped ambulances with intensive care unit capabilities and emergency medical equipment."
+  },
+  {
+    "title": "Hospital Hygiene, Sanitation, Septic and Cleaning Equip and Accesories",
+    "img": "https://via.placeholder.com/400x300?text=Hospital+Hygiene+Sanitation",
+    "alt": "Cleaning machines, sanitizers, and waste disposal units",
+    "category": "Hospital Hygiene, Sanitation, Septic and Cleaning Equip and Accesories",
+    "icon": "mdi-spray-bottle",
+    "description": "Products and equipment for maintaining hygiene, sanitation, and effective waste management in hospitals."
+  }
+]

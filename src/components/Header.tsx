@@ -1,92 +1,172 @@
-import { defineComponent } from "vue";
-import { RouterLink } from "vue-router";
+import { defineComponent, ref } from "vue";
+import { useRouter } from "vue-router";
 import starLogo from "@/assets/Star.png";
+import { RouterLink, useRoute } from "vue-router";
 
 export default defineComponent({
   name: "AppHeader",
   setup() {
+    const isMenuOpen = ref(false);
+    const route = useRoute();
+    const toggleMenu = () => {
+      isMenuOpen.value = !isMenuOpen.value;
+    };
+
+    const navItems = [
+      { to: "/", label: "Home", icon: "mdi-home" },
+      { to: "/products", label: "Products", icon: "mdi-package-variant" },
+      { to: "/pricing", label: "Pricing", icon: "mdi-currency-inr" },
+      { to: "/contact", label: "Contact", icon: "mdi-phone" },
+      { to: "/about", label: "About", icon: "mdi-information" },
+    ];
+
+    const isActive = (path: string) => {
+      return route.path === path;
+    };
+
     return () => (
-      <div>
-        {/* Logo Section */}
-        <div class="bg-white py-8">
-          <div class="container mx-auto px-4">
-            <div class="flex justify-center items-center">
-              <img
-                src={starLogo}
-                alt="Star Surgical and Chemicals logo"
-                class="h-24 w-24 object-contain"
-              />
-              <div class="ml-4">
-                <h1 class="text-[#0F9BA8] text-4xl font-bold">
-                  STAR SURGICAL
-                  <br />
-                  AND CHEMICALS
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Navigation Section */}
-        <div class="bg-white border-t border-b border-gray-200">
-          <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center py-2">
-              <nav class="flex space-x-6 text-sm">
-                <RouterLink
-                  to="/"
-                  class="text-[#0F9BA8] hover:text-[#1FBECA] transition-colors"
-                >
-                  home
-                </RouterLink>
-                <RouterLink
-                  to="/about"
-                  class="text-[#0F9BA8] hover:text-[#1FBECA] transition-colors"
-                >
-                  ABOUT
-                </RouterLink>
-                <RouterLink
-                  to="/products"
-                  class="text-[#0F9BA8] hover:text-[#1FBECA] transition-colors"
-                >
-                  PRODUCTS
-                </RouterLink>
-                <RouterLink
-                  to="/quality"
-                  class="text-[#0F9BA8] hover:text-[#1FBECA] transition-colors"
-                >
-                  QUALITY
-                </RouterLink>
-                <RouterLink
-                  to="/pricing"
-                  class="text-[#0F9BA8] hover:text-[#1FBECA] transition-colors"
-                >
-                  PRICING
-                </RouterLink>
-                <RouterLink
-                  to="/contact"
-                  class="text-[#0F9BA8] hover:text-[#1FBECA] transition-colors"
-                >
-                  CONTACT
-                </RouterLink>
+      <v-app-bar color="white" elevation="2" height="auto" class="pa-0">
+        <v-container fluid class="pa-0">
+          <v-row no-gutters align="center" class="py-0">
+            {/* Logo */}
+            <v-col cols="auto" class="d-flex align-center">
+              <RouterLink to="/">
+                <img
+                  src={starLogo}
+                  alt="Star Surgical and Chemicals logo"
+                  style="height:50px; max-width:150px; object-fit:contain; display:block; cursor:pointer;"
+                />
+              </RouterLink>
+            </v-col>
+            {/* Spacer */}
+            <v-col />
+            {/* Right Navigation */}
+            <v-col
+              cols="auto"
+              class="d-none d-sm-flex justify-end align-center"
+            >
+              <nav class="d-flex align-center" style="gap: 0.25rem;">
+                {navItems.map((item) => (
+                  <RouterLink
+                    key={item.to}
+                    to={item.to}
+                    class="router-link"
+                    style="text-decoration: none;"
+                  >
+                    <div
+                      class="nav-link-item"
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        padding: "0.5rem 1rem",
+                        borderRadius: "20px",
+                        transition: "all 0.3s ease",
+                        background: isActive(item.to)
+                          ? "linear-gradient(135deg, #09bc8a 0%, #74b3ce 100%)"
+                          : "transparent",
+                        color: isActive(item.to) ? "#fff" : "var(--primary-color)",
+                        fontWeight: isActive(item.to) ? 600 : 500,
+                        cursor: "pointer",
+                        margin: "0 0.25rem",
+                      }}
+                      onMouseenter={(e) => {
+                        if (!isActive(item.to)) {
+                          e.currentTarget.style.background = "rgba(9, 188, 138, 0.1)";
+                          e.currentTarget.style.color = "#09bc8a";
+                          // Keep icon teal on hover for non-active tabs
+                          const icon = e.currentTarget.querySelector('.nav-icon') as HTMLElement;
+                          if (icon) {
+                            icon.style.color = "#09bc8a";
+                          }
+                        } else {
+                          // For active tab, slightly darken the gradient on hover
+                          e.currentTarget.style.background = "linear-gradient(135deg, #08a878 0%, #5fa3c0 100%)";
+                          e.currentTarget.style.color = "#fff";
+                          // Keep icon white on hover for active tabs
+                          const icon = e.currentTarget.querySelector('.nav-icon') as HTMLElement;
+                          if (icon) {
+                            icon.style.color = "#fff";
+                          }
+                        }
+                      }}
+                      onMouseleave={(e) => {
+                        if (!isActive(item.to)) {
+                          e.currentTarget.style.background = "transparent";
+                          e.currentTarget.style.color = "var(--primary-color)";
+                          // Reset icon to teal for non-active tabs
+                          const icon = e.currentTarget.querySelector('.nav-icon') as HTMLElement;
+                          if (icon) {
+                            icon.style.color = "var(--accent-color)";
+                          }
+                        } else {
+                          // Reset to original active gradient
+                          e.currentTarget.style.background = "linear-gradient(135deg, #09bc8a 0%, #74b3ce 100%)";
+                          e.currentTarget.style.color = "#fff";
+                          // Keep icon white for active tabs
+                          const icon = e.currentTarget.querySelector('.nav-icon') as HTMLElement;
+                          if (icon) {
+                            icon.style.color = "#fff";
+                          }
+                        }
+                      }}
+                    >
+                      <v-icon
+                        size="small"
+                        class="nav-icon"
+                        style={{
+                          marginRight: "0.5rem",
+                          color: isActive(item.to) ? "#fff" : "var(--accent-color)",
+                        }}
+                      >
+                        {item.icon}
+                      </v-icon>
+                      <span style="font-size: 0.9rem;">{item.label}</span>
+                    </div>
+                  </RouterLink>
+                ))}
               </nav>
+            </v-col>
+            {/* Mobile Menu Button */}
+            <v-col cols="auto" class="d-flex d-sm-none justify-end">
+              <v-btn
+                icon
+                variant="text"
+                style="color: var(--accent-color);"
+                size="small"
+                onClick={toggleMenu}
+              >
+                <v-icon>{isMenuOpen.value ? "mdi-close" : "mdi-menu"}</v-icon>
+              </v-btn>
+            </v-col>
+          </v-row>
 
-              {/* Search Bar */}
-              <div class="mt-4 md:mt-0">
-                <div class="flex">
-                  <input
-                    type="text"
-                    placeholder="Search..."
-                    class="w-64 px-4 py-1 border border-gray-300 rounded-l focus:outline-none focus:border-[#0F9BA8]"
-                  />
-                  <button class="px-4 py-1 bg-white border border-l-0 border-gray-300 rounded-r hover:bg-gray-50 transition-colors">
-                    search
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          {/* Mobile Navigation Menu */}
+          <v-expand-transition>
+            {isMenuOpen.value && (
+              <v-card class="mx-2 mb-2" style="border-radius: 12px;">
+                <v-list>
+                  {navItems.map((item) => (
+                    <v-list-item
+                      key={item.to}
+                      to={item.to}
+                      prepend-icon={item.icon}
+                      title={item.label}
+                      style={{
+                        background: isActive(item.to)
+                          ? "linear-gradient(135deg, rgba(9, 188, 138, 0.1) 0%, rgba(116, 179, 206, 0.1) 100%)"
+                          : "transparent",
+                        color: isActive(item.to) ? "var(--accent-color)" : "var(--primary-color)",
+                        fontWeight: isActive(item.to) ? 600 : 400,
+                      }}
+                      onClick={() => (isMenuOpen.value = false)}
+                    />
+                  ))}
+                </v-list>
+              </v-card>
+            )}
+          </v-expand-transition>
+        </v-container>
+      </v-app-bar>
     );
   },
 });

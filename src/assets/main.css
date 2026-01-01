@@ -33,8 +33,9 @@ a,
   padding: 3px;
 }
 
+/* Exclude RouterLink navigation items from global hover */
 @media (hover: hover) {
-  a:hover {
+  a:hover:not([style*="border-radius"]):not(.router-link) {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
 }
